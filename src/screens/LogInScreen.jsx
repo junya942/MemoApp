@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Text, StyleSheet, TextInput,
+  View, Text, StyleSheet, TextInput, TouchableOpacity,
 } from 'react-native';
 
 import AppBar from '../components/AppBar';
@@ -17,7 +17,9 @@ export default function LogInScreen() {
         <Button label="Submit" />
         <View style={styles.footer}>
           <Text style={styles.footerText}>Not registerd?</Text>
-          <Text style={styles.footerLink}>sign up here!</Text>
+          <TouchableOpacity>
+            <Text style={styles.footerLink}>sign up here!</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
   footerLink: {
     fontSize: 14,
     lineHeight: 24,
-    backgroundColor: '#467FD3',
+    color: '#467FD3',
   },
   footer: {
     flexDirection: 'row',
