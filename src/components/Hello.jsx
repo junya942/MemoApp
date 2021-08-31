@@ -13,7 +13,7 @@ function Hello(props) {
   );
 }
 
-Hello.prototypes = {
+Hello.propTypes = {
   children: string.isRequired,
   bang: bool,
   style: shape(),
